@@ -6,6 +6,7 @@
 | Array Shift          |          Yes      | [here] (array_shift/array_shift.py)                     |
 | Array Binary Search  |          Yes      | [here] (array-binary-search/array_binary_search.py)     |
 | linked-list          |          Yes      | [here] (linked-list/linked_list.py)                     |
+| linked-list_three    |          Yes      | [here] (linked-list/linked_list.py)                     |
 -------------------------------------------------------------
 # Reverse an Array
 print the reverse of an array without using reverse
@@ -56,3 +57,17 @@ Create a Node class that has properties for the value stored in the Node, and a 
 
 ## Approach & Efficiency
 We took the approach of making a Node class that take in a value. Then made a linked-list class that has methods to add nodes to the linked list, check the linked list to see if a value is already inside it, and can print the linked list in the form of a string.
+
+## soliton
+[kth_from_end]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/kth_from_end.jpg
+
+# kth from end
+create a method for linked-list that can tell you the value at a length from the end of the list
+
+## Challenge
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Approach & Efficiency
+We took the approach of making a method called kth_from_end that iterates through the linked list and adds them all to an array. We then made an if statement that checks to see if k is between 0 and the length, and the value of that from the end of the list
+## soliton
+[kth_from_end]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/kth_from_end.jpg
