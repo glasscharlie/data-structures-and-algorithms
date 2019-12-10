@@ -5,7 +5,7 @@
 | Array Reverse        |          Yes      | [here](array_reverse/array_reverse.py)                  |
 | Array Shift          |          Yes      | [here] (array_shift/array_shift.py)                     |
 | Array Binary Search  |          Yes      | [here] (array-binary-search/array_binary_search.py)     |
-| linked-list          |          Yes      | [here] (linked-list/linked_list.py)     |
+| linked-list          |          Yes      | [here] (linked-list/linked_list.py)                     |
 -------------------------------------------------------------
 # Reverse an Array
 print the reverse of an array without using reverse
@@ -48,6 +48,8 @@ We took the approach of making a function, then making a for loop set to the len
 
 # linked-list
 Create classes for Node and Linked-List that can add a node to the begining of the linked list.
+Create methods for linked-list that can add before and after a given value, and append to the end of the list.
+create a method for linked-list that can tell you the value at a length from the end of the list
 
 ## Challenge
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node. Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created. Create an insert, includes and toString method
