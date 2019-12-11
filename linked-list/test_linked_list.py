@@ -55,18 +55,28 @@ def test_insert_two():
     assert actual == expected
 
 
-def test_append_one(empty):
+def test_append_one():
     my_list = linked_list()
-    expected = "z"
-    my_list.append('z')
-    assert empty.includes('z')
+    expected = 1
+    my_list.append(1)
+    assert my_list.includes(1) == True
 
 
-def test_append_two(lst):
+def test_append_two():
     my_list = linked_list()
-    expected = "a, b, c, d, e"
-    my_list.append('e')
-    assert lst.includes('e')
+    my_list.insert(1)
+    my_list.insert(2)
+    my_list.append(3)
+    assert my_list.includes(3) == True
+
+def test_insert_before():
+    my_list = linked_list()
+    my_list.insert(1)
+    my_list.insert(2)
+    my_list.insert_before(1, 3)
+    assert my_list.to_string() == True
+
+
 
 # Where k is greater than the length of the linked list
 def test_k_is_greater_than_length():
@@ -87,7 +97,7 @@ def test_k_is_negative():
 # Where the linked list is of a size 1
 def test_k_is_in_list_of_one():
     my_list = linked_list()
-    my_list.append(2)
+    my_list.insert(2)
     assert my_list.kth_from_end(0) == 2
 # "Happy Path" where k is not at the end, but somewhere in the middle of the linked list
 def test_k_is_happy():
@@ -96,7 +106,7 @@ def test_k_is_happy():
     my_list.insert(8)
     my_list.insert(3)
     my_list.insert(1)
-    assert my_list.kth_from_end(2) == 8
+    assert my_list.kth_from_end(2) == 3
 
 
 
