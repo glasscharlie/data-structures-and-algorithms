@@ -7,6 +7,7 @@
 | Array Binary Search  |          Yes      | [here] (array-binary-search/array_binary_search.py)     |
 | linked-list          |          Yes      | [here] (linked-list/linked_list.py)                     |
 | linked-list_three    |          Yes      | [here] (linked-list/linked_list.py)                     |
+| ll-merge             |          Yes      | [here] challenges/ll_merge/ll_merge.py                  |
 -------------------------------------------------------------
 # Reverse an Array
 print the reverse of an array without using reverse
@@ -69,5 +70,17 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 
 ## Approach & Efficiency
 We took the approach of making a method called kth_from_end that iterates through the linked list and adds them all to an array. We then made an if statement that checks to see if k is between 0 and the length, and the value of that from the end of the list
-## soliton
+## soluton
 [kth_from_end]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/kth_from_end.jpg
+
+
+# ll-merge
+create a function that merges two linked lists together while alternating nodes from each list
+
+## Challenge
+Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Approach & Efficiency
+We took the approach of making a function called merge_list that takes in two linked lists, and alternates setting the next of each list to the next of the other list until it cant anymore.
+## soliton
+[ll-merge]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/kth_from_end.jpg
