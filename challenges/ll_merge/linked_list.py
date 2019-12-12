@@ -85,14 +85,63 @@ class LinkedList:
         else:
             return 'K is out of range'
 
-new_list = LinkedList()
+            
+ 
+        q.head = q_curr
+small_list = LinkedList()
 
-new_list.insert(1)
-new_list.insert(2)
-new_list.insert(3)
-new_list.insert_after(2, 4)
-new_list.insert_before(2, 5)
-new_list.insert_before(9, 7)
-new_list.insert_after(9,7)
-new_list.to_string()
+small_list.insert(1)
+small_list.insert(2)
+small_list.insert(3)
+
+# small_list.insert_after(2, 4)
+# small_list.insert_before(2, 5)
+# small_list.insert_before(9, 7)
+# small_list.insert_after(9,7)
+small_list.to_string()
+
+big_list = LinkedList()
+
+big_list.insert(4)
+big_list.insert(5)
+big_list.insert(6)
+big_list.insert(6)
+big_list.insert(7)
+big_list.to_string()
+
+
+def merge_list(a_list, b_list):
+    a_list_curr = a_list.head 
+    b_list_curr = b_list.head 
+  
+    while a_list_curr.next != None and b_list_curr != None: 
+        #save the next address
+        a_list_next = a_list_curr.next
+        b_list_next = b_list_curr.next
+
+        # make b_list_current next of a_list_curr 
+        b_list_curr.next = a_list_next
+        a_list_curr.next = b_list_curr 
+
+        # update current for next iteration
+        a_list_curr = a_list_next 
+        b_list_curr = b_list_next
+
+        #if a list doesnt have a next and b has a current
+    if b_list_curr:
+        a_list_curr.next = b_list_curr
+
+        
+        
+        
+
+# first list is longer
+merge_list(big_list, small_list)
+big_list.to_string()
+
+#2nd list is longer
+# merge_list(small_list, big_list)
+# small_list.to_string()
+
+
 
