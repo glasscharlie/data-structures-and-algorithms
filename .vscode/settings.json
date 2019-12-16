@@ -1,3 +1,4 @@
 {
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "python.pythonPath": "/home/glasscharlie/.local/share/virtualenvs/data-structures-and-algorithms-jpvnFfra/bin/python"
 }
