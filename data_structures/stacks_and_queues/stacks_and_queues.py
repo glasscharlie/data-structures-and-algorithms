@@ -2,7 +2,7 @@ class Node:
     def __init__(self, value=None):
         self.value = value
         self.next = None
-class Stack(top):
+class Stack():
     def __init__(self):
         self.top = None
     def push(self, item):
@@ -14,33 +14,36 @@ class Stack(top):
         if current:
             self.top = current.next
         else:
-            print(“Stack is empty.“)
+            print('Stack is empty.')
     def peek(self):
-        current = self.top
-        return current.data
+        if self.top == None:
+            return None
+        else: 
+            current = self.top
+            return current.value
     def isEmpty(self):
         return self.top == None
 class Queue:
-    def __init__(self:
+    def __init__(self):
         self.front = None
         self.rear = None
-    def enqueue(self, item):
-        new_node = Node(item)
+    def enqueue(self, value):
+        new_node = Node(value)
         if self.rear:
             self.rear.next = new_node
         else:
             self.front = new_node
         self.rear = new_node
-        self.count = self.count + 1
     def dequeue(self):
         current = self.front
         if current != None:
             self.front = current.next
-            self.count = self.count - 1
         else:
-            print(“Queue is empty.“)
+            print('Queue is empty.')
     def peek(self):
+        if self.front == None:
+            return None
         current = self.front
-        return self.front.data
+        return self.front.value
     def isEmpty(self):
         return self.front == None
