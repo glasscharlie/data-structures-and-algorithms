@@ -1,4 +1,4 @@
-from stack_and_queues import Node, Stack, Queue
+from stacks_and_queues import Node, Stack, Queue
 
 def test_Node():
   node = Node(1)
@@ -17,8 +17,8 @@ def test_push_multiple():
   stack.push('A')
   stack.push('B')
   stack.push('C')
-  expected = True
-  actual = stack.includes('B')
+  expected = 'C'
+  actual = stack.peek()
   assert expected == actual
 
 def test_pop_one():
@@ -26,7 +26,7 @@ def test_pop_one():
   stack.push(1)
   stack.pop()
   expected = None
-  actual = stack.top.value
+  actual = stack.peek()
   assert actual == expected
 
 def test_pop_all():
@@ -38,7 +38,7 @@ def test_pop_all():
   stack.pop()
   stack.pop()
   expected = None
-  actual = stack.top.value
+  actual = stack.peek()
   assert actual == expected
 
 def test_peek():
@@ -51,7 +51,7 @@ def test_peek():
 
 def test_Stack_empty():
   stack = Stack()
-  actual = stack.top.value
+  actual = stack.peek()
   expected = None
   assert actual == expected
 
@@ -59,7 +59,7 @@ def test_enqueue_one():
   q = Queue()
   q.enqueue('Hello')
   expected = 'Hello'
-  actual = q.front.value
+  actual = q.peek()
   assert expected == actual
 
 def test_enqueue_multiple():
@@ -76,10 +76,9 @@ def test_dequeue_one():
   q.enqueue('A')
   q.enqueue('B')
   q.enqueue('C')
-  q.rear.dequeue()
-  q.front.dequeue()
+  q.dequeue()
   expected = 'B'
-  actual = q.front.value
+  actual = q.peek()
   assert expected == actual
 
 def test_dequeue_all():
@@ -87,24 +86,24 @@ def test_dequeue_all():
   q.enqueue('A')
   q.enqueue('B')
   q.enqueue('C')
-  q.rear.dequeue()
-  q.rear.dequeue()
-  q.front.dequeue()
+  q.dequeue()
+  q.dequeue()
+  q.dequeue()
   expected = None
-  actual = q.front.value
+  actual = q.peek()
   assert expected == actual
 
 def test_peek():
   q = Queue()
-  q.peek(1)
-  q.peek(2)
+  q.enqueue(1)
+  q.enqueue(2)
   actual = q.peek()
-  expected = 2
+  expected = 1
   assert actual == expected
 
 
 def test_Queue_empty():
   q = Queue()
-  actual = q.front.value
+  actual = q.peek()
   expected = None
   assert actual == expected
