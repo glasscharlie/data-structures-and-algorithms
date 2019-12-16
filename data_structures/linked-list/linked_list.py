@@ -130,6 +130,7 @@ def merge_list(a_list, b_list):
         #if a list doesnt have a next and b has a current
     if b_list_curr:
         a_list_curr.next = b_list_curr
+    return a_list.head
 
         
         
