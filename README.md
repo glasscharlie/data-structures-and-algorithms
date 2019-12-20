@@ -75,6 +75,14 @@ We took the approach of making a method called kth_from_end that iterates throug
 [kth_from_end]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/kth_from_end.jpg
 
 
+# Binary Tree and BST Implementation
+create a node, binarytree and binarytreesearch classes that can add to the tree.
+
+## Challenge
+Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
+Create a BinaryTree class. Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately. Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab. Create a BinarySearchTree class. Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree. Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+
+
 # ll-merge
 create a function that merges two linked lists together while alternating nodes from each list
 
@@ -85,7 +93,6 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 We took the approach of making a function called merge_list that takes in two linked lists, and alternates setting the next of each list to the next of the other list until it cant anymore.
 ## soliton
 [ll-merge]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/kth_from_end.jpg
-
 
 
 # stack and queue
@@ -102,3 +109,4 @@ Define a method called enqueue which takes any value as an argument and adds a n
 
 ## Approach & Efficiency
 we chose to whiteboard out the classes and their methods, and whiteboarded out tests for them. We then moved the code over to the computers and tested that everything runs correctly
+

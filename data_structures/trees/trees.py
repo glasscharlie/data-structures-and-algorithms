@@ -8,7 +8,10 @@ class BinaryTree:
     def __init__(self, value=None):
         self._root = value
 
-    def pre_order(self, current=None, output_array=[]):
+    def pre_order(self, current=None, output_array=None):
+        if output_array == None:
+            output_array = []
+        
         if not current:
             current = self._root
 
@@ -22,32 +25,34 @@ class BinaryTree:
 
         return output_array
 
-    def in_order(self, current=None, output_array=[]):
-        output_array=[]
+    def in_order(self, current=None, output_array=None):
+        if output_array == None:
+            output_array=[]
         if not current:
             current = self._root
 
         if current.left:
-            output_array += self.in_order(current.left, output_array)
+            self.in_order(current.left, output_array)
 
         output_array.append(current.value)
 
         if current.right:
-            output_array += self.in_order(current.right, output_array)
+            self.in_order(current.right, output_array)
 
         return output_array
 
-    def post_order(self, current=None, output_array=[]):
-        output_array=[]
+    def post_order(self, current=None, output_array=None):
+        if output_array == None:
+            output_array=[]
 
         if not current:
             current = self._root
 
         if current.left:
-            output_array += self.post_order(current.left, output_array)
+            self.post_order(current.left, output_array)
 
         if current.right:
-            output_array += self.post_order(current.right, output_array)
+            self.post_order(current.right, output_array)
 
         output_array.append(current.value)
 
