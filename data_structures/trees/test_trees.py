@@ -19,74 +19,122 @@ def test_three_members():
   assert tree._root.right.value == 15
 
 def test_pre_order_three():
-  tree = BinarySearchTree()
-  tree.add(5)
-  tree.add(10)
-  tree.add(15)
-  expected = [5, 10, 15]
-  actual = tree.pre_order()
-  assert actual == expected
+    tree = BinarySearchTree()
+    tree.add(5)
+    tree.add(3)
+    tree.add(15)
+    expected = [5, 3, 15]
+    actual = tree.pre_order()
+    assert actual == expected
 
 def test_pre_order_more():
     tree = BinarySearchTree()
+    tree.add(20)
     tree.add(5)
     tree.add(10)
     tree.add(15)
-    tree.add(20)
-    # tree.add(25)
-    # tree.add(30)
-    # tree.add(35)
-    # tree.add(40)
-    # tree.add(45)
-    # tree.add(50)
-    # tree.add(55)
-    # tree.add(60)
-    # tree.add(65)
-    # tree.add(70)
-    # tree.add(75)
-    # tree.add(80)
-    # tree.add(85)
+    tree.add(25)
+    tree.add(35)
+    tree.add(40)
+    tree.add(23)
+    tree.add(45)
 
-    assert tree._root.value == 5
-    assert not tree._root.left
-    assert tree._root.right.value == 10
-    assert not tree._root.right.left
-    assert tree._root.right.right.value == 15
-    assert not tree._root.right.right.left
-    assert tree._root.right.right.right.value == 20
-    assert not tree._root.right.right.right.left
-    # expected = [5, 10, 15, 20] #25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85 ]
-    # actual = tree.pre_order()
-    # assert actual == expected
+
+    # assert tree._root.value == 5
+    # assert not tree._root.left
+    # assert tree._root.right.value == 10
+    # assert not tree._root.right.left
+    # assert tree._root.right.right.value == 15
+    # assert not tree._root.right.right.left
+    # assert tree._root.right.right.right.value == 20
+    # assert not tree._root.right.right.right.left
+
+    expected = [20, 5, 10, 15, 25, 23, 35, 40, 45]
+    actual = tree.pre_order()
+    assert actual == expected
 
 def test_in_order_three():
     tree = BinarySearchTree()
     tree.add(5)
-    tree.add(10)
+    tree.add(3)
     tree.add(15)
-    expected = [5, 10, 15]
+    expected = [3, 5, 15]
     actual = tree.in_order()
     assert actual == expected
 
-# def test_in_order_more():
-#     tree = BinarySearchTree()
-#     tree.add(5)
-#     tree.add(10)
-#     tree.add(15)
-#     tree.add(20)
-#     tree.add(25)
-#     tree.add(30)
-#     tree.add(35)
-#     tree.add(40)
-#     tree.add(45)
-#     tree.add(50)
-#     tree.add(55)
-#     tree.add(60)
-#     tree.add(65)
-#     tree.add(70)
-#     tree.add(75)
-#     tree.add(80)
-#     tree.add(85)
-#     expected = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85 ]
-#     actual = tree.in_order()
-#     assert actual == expected
+def test_in_order_more():
+    tree = BinarySearchTree()
+    tree.add(20)
+    tree.add(5)
+    tree.add(10)
+    tree.add(15)
+    tree.add(25)
+    tree.add(35)
+    tree.add(40)
+    tree.add(23)
+    tree.add(45)
+    expected = [5, 10, 15, 20, 23, 25, 35, 40, 45]
+    actual = tree.in_order()
+    assert actual == expected
+
+def test_post_order_three():
+    tree = BinarySearchTree()
+    tree.add(5)
+    tree.add(3)
+    tree.add(15)
+    expected = [3, 15, 5]
+    actual = tree.post_order()
+    assert actual == expected
+
+def test_in_order_more():
+    tree = BinarySearchTree()
+    tree.add(20)
+    tree.add(5)
+    tree.add(10)
+    tree.add(15)
+    tree.add(25)
+    tree.add(35)
+    tree.add(40)
+    tree.add(23)
+    tree.add(45)
+    expected = [15, 10, 5, 23, 45, 40, 35, 25, 20]
+    actual = tree.post_order()
+    assert actual == expected
+
+def test_contains_one():
+    tree = BinarySearchTree()
+    tree.add(20)
+    expected = True
+    actual = tree.contains(20)
+    assert actual == expected
+
+def test_contains_three_left():
+    tree = BinarySearchTree()
+    tree.add(20)
+    tree.add(30)
+    tree.add(10)
+    expected = True
+    actual = tree.contains(10)
+    assert actual == expected
+
+def test_contains_three_right():
+    tree = BinarySearchTree()
+    tree.add(20)
+    tree.add(30)
+    tree.add(10)
+    expected = True
+    actual = tree.contains(30)
+    assert actual == expected
+
+def test_contains_lots():
+    tree = BinarySearchTree()
+    tree.add(20)
+    tree.add(15)
+    tree.add(24)
+    tree.add(16)
+    tree.add(14)
+    tree.add(22)
+    tree.add(30)
+    expected = True
+    actual = tree.contains(16)
+    assert actual == expected
