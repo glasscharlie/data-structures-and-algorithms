@@ -7,6 +7,7 @@
 | Array Binary Search  |          Yes      | [here] (array-binary-search/array_binary_search.py)     |
 | linked-list          |          Yes      | [here] (linked-list/linked_list.py)                     |
 | linked-list_three    |          Yes      | [here] (linked-list/linked_list.py)                     |
+| fizzbuzz_tree        |          Yes      | [here] (challenges/fizz_buzz_tree/fizz_buzz_tree.py)    |
 -------------------------------------------------------------
 # Reverse an Array
 print the reverse of an array without using reverse
@@ -60,7 +61,7 @@ We took the approach of making a Node class that take in a value. Then made a li
 
 ## soliton
 [kth_from_end]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/kth_from_end.jpg
-
+-----------------------------------------------------------------------
 # kth from end
 create a method for linked-list that can tell you the value at a length from the end of the list
 
@@ -71,11 +72,24 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 We took the approach of making a method called kth_from_end that iterates through the linked list and adds them all to an array. We then made an if statement that checks to see if k is between 0 and the length, and the value of that from the end of the list
 ## soliton
 [kth_from_end]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/kth_from_end.jpg
-
+-----------------------------------------------------------------------
 # Binary Tree and BST Implementation
 create a node, binarytree and binarytreesearch classes that can add to the tree.
 
 ## Challenge
 Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
 Create a BinaryTree class. Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately. Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab. Create a BinarySearchTree class. Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree. Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+-----------------------------------------------------------------------
+# fizzbuzz_tree
+create a function that takes in a tree and returns a new tree with the values changed to the rules of fizzbuzz
+
+## Challenge
+Write a function called FizzBuzzTree which takes a tree as an argument. Create a new tree with the same structure as the original, but the values modified as follows: If the value is divisible by 3, replace the value with “Fizz”, If the value is divisible by 5, replace the value with “Buzz”, If the value is divisible by 3 and 5, replace the value with “FizzBuzz”, If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+## Approach & Efficiency
+We took the approach of making a helper function called make_copy, that makes a copy of the tree. Then we made a function called fizzbuzz that iterates through the new tree and changes the value of the of the Node based on the rules of fizz buzz
+## soliton
+[fizzbuzz_tree]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/fizzbuzz_tree.jpg
+-----------------------------------------------------------------------
+
 
