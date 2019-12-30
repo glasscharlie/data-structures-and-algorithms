@@ -8,6 +8,7 @@
 | linked-list          |          Yes      | [here] (linked-list/linked_list.py)                     |
 | linked-list_three    |          Yes      | [here] (linked-list/linked_list.py)                     |
 | fizzbuzz_tree        |          Yes      | [here] (challenges/fizz_buzz_tree/fizz_buzz_tree.py)    |
+| breadth_first        |          Yes      | [here] (challenges/breadth/breadth.py)                  |
 -------------------------------------------------------------
 # Reverse an Array
 print the reverse of an array without using reverse
@@ -90,6 +91,19 @@ Write a function called FizzBuzzTree which takes a tree as an argument. Create a
 We took the approach of making a helper function called make_copy, that makes a copy of the tree. Then we made a function called fizzbuzz that iterates through the new tree and changes the value of the of the Node based on the rules of fizz buzz
 ## soliton
 [fizzbuzz_tree]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/fizzbuzz_tree.jpg
+-----------------------------------------------------------------------
+
+# breadth-first
+create a function that takes in a tree and returns a list of the values in breadth-first order
+
+## Challenge
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+## Approach & Efficiency
+We took the approach of making a function called breadth, which first adds the root to an estansiation of a Queue class. Then it looks to see if the front of the queue has a left and right, if so it adds those to the queue, and dequeues the front node. It then looks to see if the front has a left and right, and adds those to the queue and repeats itself until there is nothing left in the queue. 
+
+## soliton
+[breadth-first]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/breadth-first.jpg
 -----------------------------------------------------------------------
 
 
