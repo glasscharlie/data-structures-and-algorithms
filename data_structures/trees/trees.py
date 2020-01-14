@@ -1,3 +1,4 @@
+
 class Node:
   def __init__(self, value):
     self.value = value
@@ -104,3 +105,5 @@ class BinarySearchTree(BinaryTree):
                 return self.contains(value, curr.right)
 
         return False
+
+

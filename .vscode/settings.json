@@ -1,4 +1,10 @@
 {
     "python.formatting.provider": "black",
-    "python.pythonPath": "/home/glasscharlie/.local/share/virtualenvs/data-structures-and-algorithms-jpvnFfra/bin/python"
+    "python.pythonPath": "/home/glasscharlie/.local/share/virtualenvs/data-structures-and-algorithms-jpvnFfra/bin/python",
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
 }
