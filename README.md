@@ -11,7 +11,8 @@
 | fizzbuzz_tree        |          Yes      | [here] (challenges/fizz_buzz_tree/fizz_buzz_tree.py)    |
 | breadth_first        |          Yes      | [here] (challenges/breadth/breadth.py)                  |
 | insertion sort       |          Yes      | [here] (challenges/insertion/insertion.py)              |
-| merge sort           |          Yes      | [here] (challenges/merge_sort/sort.py)                  |
+| merge_sort           |          Yes      | [here] (challenges/merge_sort/sort.py)                  |
+| quick_sort           |          Yes      | [here] (challenges/merge_sort/sort.py)                  |
 ------------------------------------------------------------------------------------------------------
 # Reverse an Array
 print the reverse of an array without using reverse
@@ -124,6 +125,21 @@ create a function that takes in a list and return the array in sorted order, usi
 Write a function that takes in a list, and returns the list in reverse order using the merge sort method. Document a visual process of how it works using a test array. (for more info look at BLOG.md)
 
 ## Approach & Efficiency
-We took the approach of making a function called merge_sort, which uses traversal to keep splitting the list into new list, until each list only has one element in it. It then compares the lists, sorting them into arrays until you have a sorted list. (for more info look at BLOG.md)
+We took the approach of making a function called merge_sort, which uses recursion to keep splitting the list into new list, until each list only has one element in it. It then compares the lists, sorting them into arrays until you have a sorted list. (for more info look at BLOG.md)
+----------------------------------------------------------------------
+# merge sort 
+create a function that takes in a list and return the array in sorted order, using the quick sort method. 
+
+## Challenge
+Write a function that takes in a list, and returns the list in reverse order using the quick sort method. Document a visual process of how it works using a test array. (for more info look at BLOG.md)
+
+## Approach & Efficiency
+We took the approach of making a function called quick_sort, which takes a random element and makes it the pivot, it then sorts the list into two new lists, with all smaller elements in the left array and all higher elements in the right array. It does this recursively until all elements are by themselves, and then adds them all back together into a single list.
+----------------------------------------------------------------------
+# hashtable
+Implement a Hashtable
+
+## Challenge
+Implement a Hashtable with the following methods: add: takes in both the key and value. This method should hash the key, and add the key and value pair to the table, handling collisions as needed. get: takes in the key and returns the value from the table. contains: takes in the key and returns a boolean, indicating if the key exists in the table already. hash: takes in an arbitrary key and returns an index in the collection
 
 
