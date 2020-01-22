@@ -4,7 +4,7 @@ class Node:
     self.left = None
     self.right = None
 
-  class BinarySearchTree():
+class BinarySearchTree():
     def __init__(self, value=None):
         self._root = value
 
@@ -47,7 +47,7 @@ class Node:
         return output_array
     
 
-def tree_intersection(tree, other_tree):
+def tree_insertion(tree, other_tree):
 
     if tree.root == None or other_tree.root == None:
         return False

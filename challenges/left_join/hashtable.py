@@ -57,8 +57,3 @@ class HashTable:
             return False
         else:
             return True
-
-
-
-
-

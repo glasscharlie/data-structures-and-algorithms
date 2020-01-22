@@ -1,6 +1,6 @@
 {
     "python.formatting.provider": "black",
-    "python.pythonPath": "/home/glasscharlie/.local/share/virtualenvs/data-structures-and-algorithms-jpvnFfra/bin/python",
+    "python.pythonPath": "C:\\Users\\charl\\.virtualenvs\\22-8HY1trCQ\\Scripts\\python.exe",
     "python.testing.pytestArgs": [
         "."
     ],
