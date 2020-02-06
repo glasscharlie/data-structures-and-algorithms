@@ -1,21 +1,22 @@
 
 # data-structures-and-algorithms
 
-|   Challenge          |     Completed     |  Link                                                   |
-|----------------------|:-----------------:|---------------------------------------------------------|
-| Array Reverse        |          Yes      | [here](array_reverse/array_reverse.py)                  |
-| Array Shift          |          Yes      | [here] (array_shift/array_shift.py)                     |
-| Array Binary Search  |          Yes      | [here] (array-binary-search/array_binary_search.py)     |
-| linked-list          |          Yes      | [here] (linked-list/linked_list.py)                     |
-| linked-list_three    |          Yes      | [here] (linked-list/linked_list.py)                     |
-| fizzbuzz_tree        |          Yes      | [here] (challenges/fizz_buzz_tree/fizz_buzz_tree.py)    |
-| breadth_first        |          Yes      | [here] (challenges/breadth/breadth.py)                  |
-| insertion sort       |          Yes      | [here] (challenges/insertion/insertion.py)              |
-| merge_sort           |          Yes      | [here] (challenges/merge_sort/sort.py)                  |
-| quick_sort           |          Yes      | [here] (challenges/merge_sort/sort.py)                  |
-| repeated_word        |          Yes      | [here] (challenges/repeated_words/repeated.py)          |
-|multi-bracket-val     |          Yes      | [here] (challenges\multi_bracket_validation)            |
-------------------------------------------------------------------------------------------------------
+|   Challenge          |     Completed     |  Link                                                     |
+|----------------------|:-----------------:|-----------------------------------------------------------|
+| Array Reverse        |          Yes      | [here](array_reverse/array_reverse.py)                    |
+| Array Shift          |          Yes      | [here] (array_shift/array_shift.py)                       |
+| Array Binary Search  |          Yes      | [here] (array-binary-search/array_binary_search.py)       |
+| linked-list          |          Yes      | [here] (linked-list/linked_list.py)                       |
+| linked-list_three    |          Yes      | [here] (linked-list/linked_list.py)                       |
+| fizzbuzz_tree        |          Yes      | [here] (challenges/fizz_buzz_tree/fizz_buzz_tree.py)      |
+| breadth_first        |          Yes      | [here] (challenges/breadth/breadth.py)                    |
+| insertion sort       |          Yes      | [here] (challenges/insertion/insertion.py)                |
+| merge_sort           |          Yes      | [here] (challenges/merge_sort/sort.py)                    |
+| quick_sort           |          Yes      | [here] (challenges/merge_sort/sort.py)                    |
+| repeated_word        |          Yes      | [here] (challenges/repeated_words/repeated.py)            |
+| multi-bracket-val    |          Yes      | [here] (challenges\multi_bracket_validation)              |
+| tree-interseection   |          Yes      | [here] (challenges\tree_intersection\tree_intersection.py)|
+--------------------------------------------------------------------------------------------------------
 # Reverse an Array
 print the reverse of an array without using reverse
 
@@ -167,3 +168,15 @@ We took the approach of making a function called multibracket validation, that l
 
 ## Solution
 [multi-bracket-validation]C:\Users\charl\Documents\codefellows\401\data-structures-and-algorithms\assets\multi-bracket-validation.jpg
+----------------------------------------------------------------------
+# tree-intersection 
+Write a function called tree_intersection that takes two binary tree parameters. Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees. 
+
+## Challenge
+Write a function called tree_intersection that takes two binary tree parameters. Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees. 
+
+## Approach & Efficiency
+We took the approach of making a function called tree-insertion, that takes in two trees as a peramiter. It then adds values from the first tree to a set. It then checks the values of the 2nd tree, and if it is in the list already it adds it to a list. It then returns the list
+
+## Solution
+[multi-bracket-validation]C:\Users\charl\Documents\codefellows\401\data-structures-and-algorithms\assets\tree_intersection.jpg
