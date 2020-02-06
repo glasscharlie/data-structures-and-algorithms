@@ -14,6 +14,7 @@
 | merge_sort           |          Yes      | [here] (challenges/merge_sort/sort.py)                  |
 | quick_sort           |          Yes      | [here] (challenges/merge_sort/sort.py)                  |
 | repeated_word        |          Yes      | [here] (challenges/repeated_words/repeated.py)          |
+|multi-bracket-val     |          Yes      | [here] (challenges\multi_bracket_validation)            |
 ------------------------------------------------------------------------------------------------------
 # Reverse an Array
 print the reverse of an array without using reverse
@@ -154,4 +155,15 @@ We took the approach of making a helper function called punctuation, that takes 
 
 ## Solution
 [array_reverse]/home/glasscharlie/charl/Documents/codefellows/401/data-structures-and-algorithms/assets/repeated_name.jpg
+----------------------------------------------------------------------
+# multi-bracket-validation 
+Write a function that takes in a string as its only argument, and returns a boolean representing whether or not the brackets in the string are balanced.  
 
+## Challenge
+Write a function that takes in a string as its only argument, and returns a boolean representing whether or not the brackets in the string are balanced. 
+
+## Approach & Efficiency
+We took the approach of making a function called multibracket validation, that loops through the string and adds opening brackets to an empty string. If there is a closing bracket, that doesn't have the opening bracket before it, it returns false, else returns true.
+
+## Solution
+[multi-bracket-validation]C:\Users\charl\Documents\codefellows\401\data-structures-and-algorithms\assets\multi-bracket-validation.jpg
