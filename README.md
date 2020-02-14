@@ -16,6 +16,7 @@
 | repeated_word        |          Yes      | [here] (challenges/repeated_words/repeated.py)            |
 | multi-bracket-val    |          Yes      | [here] (challenges\multi_bracket_validation)              |
 | tree-interseection   |          Yes      | [here] (challenges\tree_intersection\tree_intersection.py)|
+| breadth_first        |          Yes      | [here] (data_structures/graph/graph.py)                   |
 --------------------------------------------------------------------------------------------------------
 # Reverse an Array
 print the reverse of an array without using reverse
@@ -177,6 +178,18 @@ Write a function called tree_intersection that takes two binary tree parameters.
 
 ## Approach & Efficiency
 We took the approach of making a function called tree-insertion, that takes in two trees as a peramiter. It then adds values from the first tree to a set. It then checks the values of the 2nd tree, and if it is in the list already it adds it to a list. It then returns the list
+
+## Solution
+[multi-bracket-validation]C:\Users\charl\Documents\codefellows\401\data-structures-and-algorithms\assets\tree_intersection.jpg
+----------------------------------------------------------------------
+# breadth first
+Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited. Display the collection.
+
+## Challenge
+Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited. Display the collection. 
+
+## Approach & Efficiency
+We took the approach of making a method on the graph class that takes in a starting node. It then finds each nodes neighbor, and if the neighbor node is not already seen, it adds it to the list
 
 ## Solution
 [multi-bracket-validation]C:\Users\charl\Documents\codefellows\401\data-structures-and-algorithms\assets\tree_intersection.jpg
