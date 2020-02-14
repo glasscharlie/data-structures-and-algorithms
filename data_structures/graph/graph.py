@@ -1,3 +1,5 @@
+import collections
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -32,38 +34,18 @@ class Graph:
 
     def get_neighbors(self, node):
         return self._adjacency_list[node]
+    
+    def breadth_first(self, node):
+        visited = set()
+        q = collections.deque()
+        q.appendleft(node)
+        while q:
+            current = q.pop()
+            visited.add(current)
+            lst = self.get_neighbors(current)
+            if lst:
+                for nodes in lst:
+                    if isinstance(nodes, node) and nodes not in visited:
+                        q.appendleft(vert)
 
-def get_edge(graph, lst):
-    includes = True
-    price = 0
-    for i in range(0, len(lst) - 1):
-        neighbors = graph.get_neighbors(lst[i])
-        for j in range(0, len(neighbors)):
-            if (neighbors[j][0].value) == (lst[i + 1].value):
-                price += neighbors[j][1]
-                includes = True
-                break
-            else: 
-                includes = False
-        if includes == False:
-            return {False, '$0'}
 
-    return {True: f'${price}'}
-
-g = Graph()
-Pandora = g.add_node('Pandora')
-Arandelle = g.add_node('Arandelle')
-Metro = g.add_node('Metro')
-Monster = g.add_node('Monster')
-Naboo = g.add_node('Naboo')
-Narnia = g.add_node('Narnia')
-g.add_edge(Pandora, Metro, 82)
-g.add_edge(Pandora, Arandelle, 150)
-g.add_edge(Monster, Metro, 105)
-g.add_edge(Metro, Naboo,  26)
-g.add_edge(Narnia, Naboo,  250)
-g.add_edge(Narnia, Metro, 37)
-g.add_edge(Arandelle, Metro,  99)
-g.add_edge(Arandelle, Monster,  42)
-g.add_edge(Naboo, Monster,  73)
-print(get_edge(g,[Pandora, Metro, Naboo]))
